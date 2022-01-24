@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect('mongodb+srv://chris:chris@cluster0.k1npp.mongodb.net/task-manager?',{
-    useNewUrlParser:true,  
-    
+    useNewUrlParser:true, 
 })
 // const task =new Task({
 //     description:"hey man it's me study node js",
