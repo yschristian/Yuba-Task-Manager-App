@@ -12,3 +12,9 @@ const port = process.env.PORT || 3000;
 app.listen(port,()=>{
   console.log('server is on port'+port);
 })
+const jwt = require("jsonwebtoken");
+const myFunc = async()=>{
+  const token  = jwt.sign({_id:'abcd3323'},'thatisnode' )
+  console.log(token);
+}
+myFunc()
