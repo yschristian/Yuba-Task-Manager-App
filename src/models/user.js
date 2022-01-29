@@ -51,7 +51,7 @@ const userSchema = new mongoose.Schema({
          }
     }] 
 },{
-  timeStamps:true,
+  timestamps:true
 })
 //virtual property is not  data stored in datbase
 //relatioship btn two entities
