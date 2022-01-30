@@ -13,7 +13,7 @@ const upload = multer({
       fileSize:1000000
    },
    fileFilter(req,file,cb){
-     if(!file.originalname.match('/\.(doc|docx)$/')){
+     if(!file.originalname.match(/\.(doc|docx)$/)){
           return cb(new Error('please upload word document'))
      }
        cb(undefined, true)
@@ -21,9 +21,11 @@ const upload = multer({
 })
 app.post('/upload',upload.single('upload'),(req,res)=>{
   res.send()
-},(error,req,res,next)=>{
-  res.status(400).send({error:error.message})
 })
+
+// ,(error,req,res,next)=>{
+//   res.status(400).send({error:error.message})
+
 
 app.use(express.json())
 app.use(userRouter)
