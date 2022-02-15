@@ -17,3 +17,8 @@ const updateAgeAndCount = async(id,age)=>{
 updateAgeAndCount('61eb1fef9d81c3f2da1ec4b2',25).then((count)=>{
     console.log(count)
 }).catch((e)=>{console.log(e);})
+
+
+
+
+// env-cmd ./config/dev.env

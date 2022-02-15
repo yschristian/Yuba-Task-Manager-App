@@ -4,6 +4,7 @@ const userRouter  = require('./routers/user');
 const  taskerRouter = require('./routers/task');
 const app = express();
 const port = process.env.PORT || 3000;
+// const port = process.env.PORT;
 
 db()
 const multer =  require('multer')
